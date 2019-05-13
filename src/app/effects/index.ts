@@ -1,3 +1,4 @@
+import { RatingsEffects } from './ratings.effects';
 import { RecipeListEffects } from './recipe-list.effects';
 import { RecipeDetailEffects } from './recipe-detail.effects';
 import { AuthorsEffects } from './authors.effects';
@@ -9,6 +10,7 @@ export const EFFECTS = [
   RecipeListEffects,
   RecipeDetailEffects,
   AuthorsEffects,
+  RatingsEffects,
   RouteEffects,
   ScrollEffects,
   NotificationEffects,

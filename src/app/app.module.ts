@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { StarRatingModule } from 'angular-star-rating';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
-import { RecipeFormModule } from './modal-views/recipe-form/recipe-form.module';
 import { REDUCERS } from './reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { EFFECTS } from './effects';
@@ -33,6 +33,8 @@ import { BreadcrumbsModule } from './components/breadcrumbs/breadcrumbs.module';
     MatSnackBarModule,
     ToolbarModule,
     BreadcrumbsModule,
+
+    StarRatingModule.forRoot(),
   ],
   providers: [
     {

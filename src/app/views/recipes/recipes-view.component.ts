@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AppStateModel } from '../../models/helper/app-state.model';
 import { select, Store } from '@ngrx/store';
-import { $recipeListData } from '../../selectors/recipe-list.selectors';
+import { $recipeListDataWithRatings } from '../../selectors/recipe-list.selectors';
 import { RoutePath } from 'src/app/app-utils';
 
 @Component({
@@ -11,7 +11,7 @@ import { RoutePath } from 'src/app/app-utils';
 export class RecipesViewComponent {
   readonly RoutePath = RoutePath;
 
-  readonly recipeListData$ = this.store.pipe(select($recipeListData));
+  readonly recipeListData$ = this.store.pipe(select($recipeListDataWithRatings));
 
   constructor(private readonly store: Store<AppStateModel>) { }
 }

@@ -1,5 +1,4 @@
 import { Action } from '@ngrx/store';
-import { RecipeModel } from '../models/api/recipe.model';
 import { SimpleRecipeModel } from '../models/api/simple-recipe.model';
 
 export class GetRecipesRequestAction implements Action {

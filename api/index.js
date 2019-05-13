@@ -7,6 +7,7 @@ const BAD_REQUEST__RESPONSE = {error: 'Bad request'};
 const RESPONSE_DELAY = 500;
 const RECIPES_PATH = '/recipes';
 const AUTHORS_PATH = '/authors';
+const RATINGS_PATH = '/ratings';
 
 function delay(callback) {
   setTimeout(callback, RESPONSE_DELAY);
@@ -39,9 +40,18 @@ function isValidAuthor(author) {
   );
 }
 
+function isValidRating(rating) {
+  return (
+      rating instanceof Object &&
+      typeof rating.recipeId === 'string' &&
+      typeof rating.rating === 'string'
+  );
+}
+
 let database = {
   authors: require('./authors.json'),
-  recipes: require('./recipes.json')
+  recipes: require('./recipes.json'),
+  ratings: require('./ratings.json')
 };
 
 const app = express();
@@ -162,6 +172,22 @@ app.post(RECIPES_PATH, ({body}, res) => {
   database = {...database, recipes: [...database.recipes, recipe]};
 
   delay(() => res.json(recipe));
+});
+
+app.get(RATINGS_PATH, (_, res) => {
+  delay(() => res.json(database.ratings));
+});
+
+app.post(RATINGS_PATH, ({body}, res) => {
+  if (!isValidRating(body)) {
+    delay(() => res.status(400).json(BAD_REQUEST__RESPONSE));
+    return;
+  }
+
+  const rating = {...body};
+  database = {...database, ratings: [...database.ratings, rating]};
+
+  delay(() => res.json(rating));
 });
 
 app.listen(3000);

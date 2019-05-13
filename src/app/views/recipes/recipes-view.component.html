@@ -1,4 +1,5 @@
 <div class="recipes">
+
   <a
     *ngFor="let recipe of recipeListData$ | async"
     [routerLink]="['/' + RoutePath.Recipes, recipe.id]"
@@ -7,6 +8,10 @@
       <mat-card-header>
 <!--        <div mat-card-avatar class="avatar-header-image" [ngStyle]="{'backgroundImage': 'url('+ au+')'}"></div>-->
         <mat-card-title>{{recipe.title}}</mat-card-title>
+        <mat-card-subtitle>
+            <star-rating [starType]="'svg'" [labelPosition]="'right'" [labelText]="(recipe.ratings | ratingsAvg).toFixed(2)" [rating]="recipe.ratings | ratingsAvg"></star-rating>
+            {{recipe.ratings.length}}
+        </mat-card-subtitle>
         <mat-card-subtitle>
             <!--by {{recipe.authorIds | appAuthorNames}}-->
             <mat-chip-list>
