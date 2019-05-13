@@ -1,0 +1,7 @@
+<div class="breadcrumbs">
+  <mat-icon>home</mat-icon>
+  <ng-container *ngFor="let crumb of breadcrumbs$ | async">
+    <mat-icon>keyboard_arrow_right</mat-icon>  
+    <span class="mat-body">{{crumb}}</span>
+  </ng-container>
+</div>

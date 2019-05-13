@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1f60bcbf",
+    "email": "bernard.black@flowup.cz",
+    "name": "Bernard Black",
+    "avatar": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Round&hairColor=Platinum&facialHairType=MoustacheMagnum&facialHairColor=BrownDark&clotheType=ShirtVNeck&clotheColor=Gray02&eyeType=WinkWacky&eyebrowType=UnibrowNatural&mouthType=Default&skinColor=Pale"
+  },
+  {
+    "id": "860fc2fa",
+    "email": "manny.bianco@flowup.cz",
+    "name": "Manny Bianco",
+    "avatar": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Kurt&hairColor=PastelPink&facialHairType=Blank&facialHairColor=BrownDark&clotheType=CollarSweater&clotheColor=PastelRed&eyeType=Default&eyebrowType=UpDownNatural&mouthType=Smile&skinColor=Light"
+  },
+  {
+    "id": "0dcf7a97",
+    "email": "fran.katzenjammer@flowup.cz",
+    "name": "Fran Katzenjammer",
+    "avatar": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairFroBand&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=Blonde&clotheType=BlazerShirt&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
+  }
+]

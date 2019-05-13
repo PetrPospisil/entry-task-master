@@ -1,0 +1,16 @@
+<button mat-button
+        type="button"
+        class="image-picker"
+        (click)="fileInput.click()"
+        matTooltip="Select image">
+  <ng-container *ngIf="dataUrl; else placeholder">
+    <img class="image-picker-thumbnail" [src]="dataUrl">
+  </ng-container>
+  <ng-template #placeholder>
+    <mat-icon>add_circle_outline</mat-icon>
+  </ng-template>
+</button>
+<input type="file"
+       class="image-picker-file-input"
+       (change)="readDataUrl($event)"
+       #fileInput>

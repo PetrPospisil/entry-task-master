@@ -1,0 +1,264 @@
+[
+  {
+    "id": "dbe585ae",
+    "title": "Maple-Glazed Ham",
+    "authorIds": ["860fc2fa"],
+    "ingredients": [
+      {
+        "amount": "1",
+        "name": "boneless cooked ham"
+      },
+      {
+        "amount": "4",
+        "unit": "tsp",
+        "name": "maple syrup"
+      },
+      {
+        "amount": "4",
+        "unit": "tsp",
+        "name": "wholegrain mustard"
+      },
+      {
+        "amount": "160",
+        "unit": "ml",
+        "name": "cider"
+      },
+      {
+        "name": "salt and pepper"
+      }
+    ],
+    "text": [
+      "Using a sharp knife score the layer of fat on the ham in a criss cross fashion around meat with thin layer of fat.",
+      "Mix the glaze ingredients together and pour over the ham. Bake in oven preheated to 180°C for 30mins, making sure to baste well every ten minutes.",
+      "Allow to rest for 30 minutes or serve chilled."
+    ],
+    "imageUrl": "https://img.taste.com.au/3gBNdA3g/taste/2010/01/maple-honey-mustard-glazed-ham-119210-2.jpg"
+  },
+  {
+    "id": "123456f",
+    "title": "Chili con Carne",
+    "authorIds": ["860fc2fa", "0dcf7a97"],
+    "ingredients": [
+      {
+        "amount": "1/2",
+        "unit": "pound",
+        "name": "beef chuck, cut into 1 inch cubes"
+      },
+      {
+        "amount": "1/2",
+        "unit": "pound",
+        "name": "pork shoulder, cut into 1 inch cubes"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "name": "salt plus more to taste"
+      },
+      {
+        "amount": "1",
+        "name": "freshly ground black pepper"
+      },
+      {
+        "amount": "1/2",
+        "unit": "cup",
+        "name": "olive oil"
+      },
+      {
+        "amount": "2",
+        "name": "large spanish onions, chopped"
+      },
+      {
+        "amount": "10",
+        "name": "large cloves garlic, minced"
+      },
+      {
+        "amount": "1/2",
+        "unit": "cup",
+        "name": "red sweet chilli powder"
+      },
+      {
+        "amount": "1/2",
+        "unit": "tsp",
+        "name": "spicy chilli powder"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "name": "ground cumin"
+      },
+      {
+        "amount": "2",
+        "unit": "tsp",
+        "name": "oregano, crushed"
+      },
+      {
+        "amount": "6",
+        "unit": "cups",
+        "name": "beef or chicken broth"
+      },
+      {
+        "amount": "2",
+        "unit": "cans",
+        "name": "pinto beans, drained and rinsed"
+      },
+      {
+        "amount": "2",
+        "name": "fresh (Jalapeño) peppers"
+      }
+    ],
+    "text": [
+      "1. Pat the meat dry with a paper towel and season with the salt and pepper. Heat 2 tablespoons of the oil in a large stew pot or Dutch oven over medium-high heat. Sear the meat, in small batches, until well browned, adding more oil to the pan if needed. Transfer meat to a bowl and reserve.",
+      "2. Discard all but 2 tablespoons of the oil from the pan. Saute the onions over medium heat for 10 minutes, scraping up the browned bits with a wooden spoon from the bottom of the pan. Add the garlic and saute for 2 minutes more. Stir in the chili powders, cumin, and oregano and cook for 2 minutes. Whisk in 5 cups of the stock. Add the meat and any accumulated juices to the pot. Bring to a gentle simmer. Season the chili with salt and pepper to taste, and stew the meat with a cover slightly ajar until almost tender, about 3 hours.",
+      "3. In a food processor or blender puree half of the beans with the remaining stock. Add the bean mixture to the chili along with the whole beans. Simmer for 1 hour more or until the meat is tender. Season with salt and pepper to taste and serve with rice and selections of condiments, like sour cream, chopped coriander, shredded cheddar, minced fresh or sliced pickled jalapenos.",
+      "Cook's Note: Try to avoid using canned beef broth because it can give the chili an unpleasant tinny taste. The chilli tastes best if made a day a head, refrigerated, and reheated."
+    ],
+    "imageUrl": "http://www.eastendfood.coop/wp-content/uploads/2018/08/Blog_Chili-con-Carne.jpg"
+  },
+
+
+  {
+    "id": "123456a",
+    "title": "Sausage Lasagna",
+    "authorIds": ["0dcf7a97"],
+    "ingredients": [
+      {
+        "amount": "9",
+        "unit": "sheets",
+        "name": "no-boil lasagna"
+      },
+      {
+        "amount": "8",
+        "unit": "ounces",
+        "name": "lean sweet Italian-style sausage"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "name": "salt plus more to taste"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "name": "freshly ground black pepper"
+      },
+      {
+        "amount": "2",
+        "name": "large onions, chopped"
+      },
+      {
+        "amount": "10",
+        "name": "large cloves garlic, minced"
+      },
+      {
+        "amount": "1/2",
+        "unit": "cup",
+        "name": "shredded mozzarella cheese"
+      },
+      {
+        "amount": "1",
+        "unit": "container",
+        "name": "low-fat cottage cheese"
+      },
+      {
+        "amount": "1",
+        "unit": "container",
+        "name": "part-skim ricotta cheese"
+      },
+      {
+        "amount": "1/2",
+        "unit": "tsp",
+        "name": "spicy chilli powder"
+      },
+      {
+        "amount": "1",
+        "unit": "pich",
+        "name": "crushed red pepper flakes"
+      },
+      {
+        "amount": "2",
+        "unit": "tsp",
+        "name": "oregano, crushed"
+      },
+      {
+        "amount": "1/4",
+        "unit": "cup",
+        "name": "dry red wine"
+      },
+      {
+        "amount": "1",
+        "unit": "can",
+        "name": "crushed tomatoes"
+      },
+      {
+        "amount": "2",
+        "unit": "cloves",
+        "name": "garlic, minced"
+      }
+    ],
+    "text": [
+      "Preheat the oven to 190°C. In a small pot bring the tomatoes, wine, whole basil sprigs, garlic, red pepper flakes, and salt and pepper, to taste, to a simmer; cook until slightly thickened, 10 minutes; set aside.",
+      "Meanwhile, puree the cottage cheese in the bowl of a food processor until smooth. add the ricotta, spinach, 1/4 cup chopped basil, spring onions, nutmeg, and salt and pepper and pulse until just combined; set aside.",
+      "Coat a large nonstick skillet with nonstick cooking spray set over medium heat. Cook the sausage and onion, breaking it up with a wooden spoon into small pieces, until the meat is browned and the onion tender, 10 minutes.",
+      "Assemble the lasagna: Mist a 9-inch by 13-inch baking dish with nonstick cooking spray. Spread 1/2 cup tomato sauce on the bottom of the prepared baking dish. Top with 3 noodles, half the ricotta mixture, half the sausage and 1/2 cup shredded mozzarella cheese. Repeat layers with sauce, noodles, remaining ricotta and sausage and 1/2 cup mozzarella cheese. Top with remaining noodles and sauce. Cover with aluminum foil and bake until the noodles are tender and the sauce is bubbling around the edges of the pan, 1 hour.",
+      "Uncover, sprinkle with remaining mozzarella cheese and continue to bake until melted, 10 minutes. Let stand 15 minutes. Sprinkle with remaining 1/4 cup basil. Serve."
+    ],
+    "imageUrl": "https://www.johnsonville.com/.imaging/mte/johnsonville-retail/640-wide/dam/johnsonville/recipe-images/italian-sausage-lasagna/jcr:content/italian-sausage-lasagna.jpg"
+  },
+  {
+    "id": "37a18ebf",
+    "title": "Brownies",
+    "authorIds": ["1f60bcbf"],
+    "ingredients": [
+      {
+        "amount": "220",
+        "unit": "g",
+        "name": "plain flour"
+      },
+      {
+        "amount": "3",
+        "unit": "tsp",
+        "name": "cocoa powder"
+      },
+      {
+        "amount": "1/4",
+        "unit": "tsp",
+        "name": "salt"
+      },
+      {
+        "amount": "300",
+        "unit": "g",
+        "name": "dark chocolate",
+        "comment": "65-70% cocoa solids"
+      },
+      {
+        "amount": "200",
+        "unit": "g",
+        "name": "unsalted butter"
+      },
+      {
+        "amount": "150",
+        "unit": "g",
+        "name": "caster sugar"
+      },
+      {
+        "amount": "220",
+        "unit": "g",
+        "name": "light brown sugar"
+      },
+      {
+        "amount": "4",
+        "name": "large eggs"
+      },
+      {
+        "amount": "1",
+        "unit": "tsp",
+        "name": "vanilla extract"
+      }
+    ],
+    "text": [
+      "Preheat the oven to 180°C. Line a 23cmx33cm brownie pan with parchment paper, leaving roughly a 5cm overhang, to help remove the brownies later.",
+      "Sift the flour, cocoa powder and salt together into a bowl and set aside. In a medium pan set over medium heat melt the chocolate and butter together. Once fully melted whisk in the sugars, then remove from the heat. Firmly whisk in the eggs and vanilla until the eggs are combined and the batter has thickened slightly. Add the flour mixture and gently fold together. You want to fold it in completely, a few spots of flour is fine. Pour into the prepared pan and gently level out."
+    ],
+    "imageUrl": "https://media4.s-nbcnews.com/i/newscms/2016_37/1158580/food-jocelyn-delk-adams-002-oreo-brownies-tease-today-160916_1fa5d3b0b3c444725e083acf6b3a3ea6.jpg"
+  }
+]

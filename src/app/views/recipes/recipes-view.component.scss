@@ -1,0 +1,39 @@
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipes-card {
+  width: 360px;
+  height: 420px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.recipes-card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.recipes-card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recipes-card-authors {
+  color: #999999;
+}
+
+.recipes-about {
+  margin-top: 40px;
+}
+
+.recipes-about-paragraph {
+  margin: 10px 0;
+}
+
+.avatar-header-image {
+  background-size: cover;
+}

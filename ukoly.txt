@@ -1,0 +1,33 @@
+//autoři
+1) Dopnenie formy na pridavanie autorov
+? Adding prettier.
+
+2) Zakomponvanie formy na pridanie autora do formy receptu pokial chceme vytvorit noveho
+? mat-select incorporate (button, selection, ...)
+
+3) Nahradenie author names ako textu za material "chips" https://material.angular.io/components/chips/overview
+	- bonus bude ak do chipu zakomponentujete aj male kolecko avatara
+
+	
+4) Pridat do modelu receptu jeho narocnost (cislo od 1 do 10) a klucove slova (tagy, napriklad: lasagna, pasta, italian, sausage, ...)
+	- v ramci view recipes priat
+		- moznost vyhladavania na zaklade tagu (moznost vyuzit Chips with input ktory je ukazany tu https://material.angular.io/components/chips/examples) 
+		- moznost zoradit recepty podla narocnosti (asc aj desc)
+
+
+5) Zobrazit na kartach receptov popis recepty orezany pipov na maximalny pocet znakov so zaokruhlenim dole na posledne cele slovo. Na toto orezanie vytvorit pipe ktora to bude transformovat. 
+
+
+6) Pridat moznost hodnotenia receptov za pomoci 5 hviezdiciek (1-5, 0 znamena ziadne hodnotenie).
+	- v ramci testovania moze uzivatel naklikat kolko hodoteni chce a nebudeme to omezovat
+	- vsetky hodnotenia budu priemerovane a v ramci detaily aj karty receptu zobrazene ako vysledne cislo (priklad ★4.2 )
+	
+
+7) Pridat moznost pridavania receptov do "oblubenych" a tym padom aj view kde bude list mojich oblubenych receptov
+
+
+8) Detail receptu by mal zobrazovat podobne ako karta aj obrazok aj autorov
+
+
+9) Upravit tabulku receptov tak aby sla sortovat podla nazvu ingrediencie
+
