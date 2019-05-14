@@ -9,8 +9,8 @@
 <!--        <div mat-card-avatar class="avatar-header-image" [ngStyle]="{'backgroundImage': 'url('+ au+')'}"></div>-->
         <mat-card-title>{{recipe.title}}</mat-card-title>
         <mat-card-subtitle>
-            <star-rating [starType]="'svg'" [labelPosition]="'right'" [labelText]="(recipe.ratings | ratingsAvg).toFixed(2)" [rating]="recipe.ratings | ratingsAvg"></star-rating>
-            {{recipe.ratings.length}}
+            <!--<star-rating [starType]="'svg'" [labelPosition]="'right'" [labelText]="(recipe.ratings | ratingsAvg).toFixed(2)" [rating]="recipe.ratings | ratingsAvg"></star-rating>-->
+            <app-recipe-star-rating [recipeId]="recipe.id" [ratings]="recipe.ratings" (onRate)="onRate($event)"></app-recipe-star-rating>
         </mat-card-subtitle>
         <mat-card-subtitle>
             <!--by {{recipe.authorIds | appAuthorNames}}-->

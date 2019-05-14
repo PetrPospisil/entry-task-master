@@ -2,7 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { map, switchMap } from 'rxjs/operators';
-import { GetRatingsRequestAction, GetRatingsSuccessAction } from '../actions/ratings.actions';
+import {
+  GetRatingsRequestAction,
+  GetRatingsSuccessAction,
+  PostRatingRequestAction,
+  PostRatingSuccessAction
+} from '../actions/ratings.actions';
 import { RoutePath, whenNavigated } from '../app-utils';
 import { RatingModel } from '../models/api/rating.model';
 
@@ -22,6 +27,13 @@ export class RatingsEffects {
     switchMap(() => this.http.get<RatingModel[]>('/ratings').pipe(
       map(ratings => new GetRatingsSuccessAction(ratings))
     ))
+  );
+
+  @Effect() readonly postRating$ = this.actions$.pipe(
+      ofType(PostRatingRequestAction.type),
+      switchMap(({rating}: PostRatingRequestAction) => this.http.post<RatingModel>('/ratings', rating).pipe(
+          map(response => new PostRatingSuccessAction(response))
+      ))
   );
 
   constructor(private readonly actions$: Actions,

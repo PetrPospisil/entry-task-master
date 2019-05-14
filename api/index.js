@@ -44,7 +44,7 @@ function isValidRating(rating) {
   return (
       rating instanceof Object &&
       typeof rating.recipeId === 'string' &&
-      typeof rating.rating === 'string'
+      typeof rating.rating === 'number'
   );
 }
 
