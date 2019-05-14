@@ -1,11 +1,12 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ClickEvent } from 'angular-star-rating';
 import { RatingModel } from '../../models/api/rating.model';
 
 @Component({
   selector: 'app-recipe-star-rating',
   templateUrl: './recipe-star-rating.component.html',
-  styleUrls: ['./recipe-star-rating.component.scss']
+  styleUrls: ['./recipe-star-rating.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RecipeStarRatingComponent implements OnInit {
 

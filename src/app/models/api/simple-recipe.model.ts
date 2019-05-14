@@ -1,4 +1,3 @@
-import { RatingModel } from './rating.model';
 
 export interface SimpleRecipeModel {
   id?: string;
@@ -8,5 +7,5 @@ export interface SimpleRecipeModel {
 }
 
 export interface SimpleRecipeRowModel extends SimpleRecipeModel {
-  ratings: RatingModel[];
+  ratingsAvg: number;
 }

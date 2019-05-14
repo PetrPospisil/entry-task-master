@@ -14,8 +14,14 @@ export const $recipeListDataWithRatings = createSelector(
     $recipeListData,
     $ratingsData,
     (recipes, ratings): SimpleRecipeRowModel[] => recipes
-        .map(recipe => ({
-            ...recipe,
-            ratings: ratings.filter(({recipeId}) => recipeId === recipe.id)
-        }))
+        .map(recipe => {
+            const recipeRatings = ratings[recipe.id!] || [];
+
+            return {
+                ...recipe,
+                // ratings: ratings.filter(({recipeId}) => recipeId === recipe.id),
+                // ratingAvg: ratings.length !== 0 ? ratings.reduce((acc, c) => acc + c.rating, 0) / ratings.length : 0,
+                ratingsAvg: recipeRatings.length ? recipeRatings.reduce((acc, c) => acc + c.rating, 0) / recipeRatings.length : 0,
+            }
+        })
 );

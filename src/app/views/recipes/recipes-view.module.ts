@@ -11,16 +11,17 @@ import { RecipesViewRoutingModule } from './recipes-view-routing.module';
 
 @NgModule({
   declarations: [RecipesViewComponent],
-  imports: [
-    CommonModule,
-    RouterModule,
-    RecipesViewRoutingModule,
-    AuthorNamesModule,
-    MatCardModule,
-    MatIconModule,
-    MatDividerModule,
-    MatChipsModule,
-    RecipeStarRatingModule
-  ]
-})
+              imports: [
+                  CommonModule,
+                  RouterModule,
+                  RecipesViewRoutingModule,
+                  AuthorNamesModule,
+                  MatCardModule,
+                  MatIconModule,
+                  MatDividerModule,
+                  MatChipsModule,
+                  RecipeStarRatingModule,
+                  StarRatingModule
+              ]
+          })
 export class RecipesViewModule { }

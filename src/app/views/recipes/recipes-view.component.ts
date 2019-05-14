@@ -7,6 +7,10 @@ import { AppStateModel } from '../../models/helper/app-state.model';
 import { select, Store } from '@ngrx/store';
 import { $recipeListDataWithRatings } from '../../selectors/recipe-list.selectors';
 import { RoutePath } from 'src/app/app-utils';
+import { tap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { SimpleRecipeRowModel } from '../../models/api/simple-recipe.model';
+import { ClickEvent } from 'angular-star-rating';
 
 @Component({
   templateUrl: './recipes-view.component.html',
@@ -15,11 +19,15 @@ import { RoutePath } from 'src/app/app-utils';
 export class RecipesViewComponent {
   readonly RoutePath = RoutePath;
 
-  readonly recipeListData$ = this.store.pipe(select($recipeListDataWithRatings));
+  readonly recipeListData$: Observable<SimpleRecipeRowModel[]> = this.store.pipe(select($recipeListDataWithRatings), tap(console.log));
 
   constructor(private readonly store: Store<AppStateModel>) { }
 
-  onRate = ($event: RatingModel) => {
-    this.store.dispatch(new PostRatingRequestAction($event));
+  onRate = (rating: number, recipeId: string) => {
+    this.store.dispatch(new PostRatingRequestAction({recipeId, rating}));
+  }
+
+  trackByFn(index: number, recipe: SimpleRecipeRowModel): string | undefined  {
+    return recipe.id;
   }
 }

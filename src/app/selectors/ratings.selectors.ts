@@ -9,5 +9,5 @@ const $ratings = ({ratings}: AppStateModel) => ratings;
 
 export const $ratingsData = createSelector(
   $ratings,
-  ({data}): RatingModel[] => data
+  ({data}) => data
 );

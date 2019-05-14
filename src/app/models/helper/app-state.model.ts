@@ -9,7 +9,7 @@ import { RouteModel } from './route.model';
 export type RecipeListState = ResourceModel<SimpleRecipeModel[]>;
 export type RecipeDetailState = ResourceModel<IdMapModel<RecipeModel>>;
 export type AuthorsState = ResourceModel<AuthorModel[]>;
-export type RatingsState = ResourceModel<RatingModel[]>;
+export type RatingsState = ResourceModel<{[id: string]: RatingModel[]}>;
 export type RouteState = RouteModel;
 export type ScrollState = number;
 

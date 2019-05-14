@@ -1,11 +1,4 @@
 <div (click)="$event.stopPropagation(); false">
-  <star-rating
-          [starType]="'svg'"
-          [labelPosition]="'right'"
-          [showHalfStars]="true"
-          [labelText]="(ratings | ratingsAvg).toFixed(2)"
-          [rating]="ratings | ratingsAvg"
-          (starClickChange)="onClick($event)"
-  ></star-rating>
+
 </div>
 

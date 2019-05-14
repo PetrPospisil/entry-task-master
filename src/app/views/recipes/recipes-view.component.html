@@ -1,7 +1,7 @@
 <div class="recipes">
 
   <a
-    *ngFor="let recipe of recipeListData$ | async"
+    *ngFor="let recipe of recipeListData$ | async; trackBy:trackByFn"
     [routerLink]="['/' + RoutePath.Recipes, recipe.id]"
   >
     <mat-card class="recipes-card">
@@ -10,7 +10,18 @@
         <mat-card-title>{{recipe.title}}</mat-card-title>
         <mat-card-subtitle>
             <!--<star-rating [starType]="'svg'" [labelPosition]="'right'" [labelText]="(recipe.ratings | ratingsAvg).toFixed(2)" [rating]="recipe.ratings | ratingsAvg"></star-rating>-->
-            <app-recipe-star-rating [recipeId]="recipe.id" [ratings]="recipe.ratings" (onRate)="onRate($event)"></app-recipe-star-rating>
+<!--            <app-recipe-star-rating [recipeId]="recipe.id" [ratings]="recipe.ratings" (onRate)="onRate($event, recipe.id)"></app-recipe-star-rating>-->
+          <div (click)="$event.stopPropagation(); false">
+            <star-rating
+              [starType]="'svg'"
+              [labelPosition]="'right'"
+              [showHalfStars]="true"
+              [labelText]="recipe.ratingsAvg.toFixed(2)"
+              [rating]="recipe.ratingsAvg"
+              (starClickChange)="onRate($event.rating, recipe.id)"
+            ></star-rating>
+          </div>
+<!--          (starClickChange)="onClick($event)"-->
         </mat-card-subtitle>
         <mat-card-subtitle>
             <!--by {{recipe.authorIds | appAuthorNames}}-->
